@@ -66,7 +66,54 @@
         <button class="header__button button">Узнать больше</button>
       </div>
     </header>
-    <main class="content"></main>
+    <main class="content">
+      <section class="section">
+        <div class="section__block">
+          <h2 class="section__title">Найт-Сити изменит тебя навсегда!</h2>
+          <p class="section__text">
+            <span class="section__text_span">Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</p>
+        </div>
+        <div class="section__gallery">
+          <img class="section__gallery_img low-img" src="<%=require('./images/mobile/content-image-1-320.png')%>" alt="Ночной город вселенной Cyberpunk">
+          <img class="section__gallery_img low-img" src="<%=require('./images/mobile/content-image-2-320.png')%>" alt="Девушка на мотоцикле смотрит на фиолетовую проекцию на стене здания">
+          <img class="section__gallery_img hight-img" src="<%=require('./images/mobile/content-image-3-320.png')%>" alt="Ночной город вселенной Cyberpunk">
+        </div>
+      </section>
+      <section class="section section-dark section__promo">
+        <span class="section__block-promo"></span>
+        <img class="section__img" src="<%=require('./images/mobile/consoles-320.png')%>" alt="Консоли Xbox Series X и Sony PlayStation 5">
+        <div class="section__form-block">
+          <div class="section__block">
+            <h2 class="section__title">Играй и выигрывай!</h2>
+            <p class="section__text">
+            Играй в <span class="section__text_span">Cyberpunk 2077</span> и получи возможность выиграть консоль 
+            <span class="section__text_span">Xbox Series X</span> или 
+            <span class="section__text_span">Sony PlayStation 5!</span> 
+            Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
+          </div>
+          <form class="section__form">
+            <div class="section__form-block">
+              <label for="name" class="section__form-label visually-hidden">
+                Имя
+              </label>
+              <input type="text" id="name" placeholder="Как тебя зовут?" class="section__form-input">
+              <label for="email" class="section__form-label visually-hidden">
+                Почта
+              </label>
+              <input type="email" id="email" placeholder="Твой е-mail" class="section__form-input">
+            </div>
+            <input class="section__form_button-file" type="file" value="Прикрепить скриншот">
+            <input class="section__form_button-submit" type="submit" value="Отправить">
+            <label class="section__form-label section__form_agree">
+              <input type="checkbox"> 
+              Согласен на обработку персональных данных
+            </label>
+          </form>
+        </div>
+      </section>
+      <section class="section"></section>
+      <section class="section"></section>
+    </main>
     <footer class="footer"></footer>
     <script src="./dist/bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
