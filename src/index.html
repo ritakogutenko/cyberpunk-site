@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
-  <body class="page page__loading">
+  <body class="page">
     <header class="header">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url('<%=require('./images/desktop/cover-image-1-1920.png')%>');"></div>
+          <!--  ВРЕМЕННО ОТКЛЮЧИЛ СЛАЙДЕР, ЧТОБЫ НЕ СКАКАЛ ДЕВ ТУЛЗ
           <div class="swiper-slide" style="background-image: url('<%=require('./images/desktop/cover-image-2-1920.png')%>');"></div>
           <div class="swiper-slide" style="background-image: url('<%=require('./images/desktop/cover-image-3-1920.png')%>');"></div>
+          -->
         </div>
       </div>
       <div class="header__block">
@@ -92,21 +94,17 @@
             Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
           </div>
           <form class="section__form">
-            <div class="section__form-block">
-              <label for="name" class="section__form-label visually-hidden">
-                Имя
-              </label>
-              <input type="text" id="name" placeholder="Как тебя зовут?" class="section__form-input">
-              <label for="email" class="section__form-label visually-hidden">
-                Почта
-              </label>
-              <input type="email" id="email" placeholder="Твой е-mail" class="section__form-input">
-            </div>
-            <input class="section__form_button-file" type="file" value="Прикрепить скриншот">
-            <input class="section__form_button-submit" type="submit" value="Отправить">
+            <input type="text" placeholder="Как тебя зовут?" class="section__form-input">
+            <input type="email" placeholder="Твой е-mail" class="section__form-input">
+            <label class="section__form-label">
+              <input class="section__form_button-file" type="file">
+              <span class="section__form-label-text">Прикрепить скриншот</span>
+              <span class="section__form-label-type">.png / .jpg / .pdf</span>
+            </label>
+            <button class="section__form_button-submit" type="submit">Отправить</button>
             <label class="section__form-label section__form_agree">
               <input type="checkbox"> 
-              Согласен на обработку персональных данных
+              <span>Согласен на обработку персональных данных</span>
             </label>
           </form>
         </div>
