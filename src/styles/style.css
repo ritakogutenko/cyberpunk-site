@@ -55,6 +55,8 @@
 .section__form_button-file {
     opacity: 0;
     position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .section__form-label-text {
@@ -127,9 +129,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 120px;
+    min-block-size: 120px;
     align-items: center;
-    color: var(--bg-color);
+    color: var(--dark-bg-font-color);
     border: 1px dashed var(--border-dashed);
     margin-bottom: 35px;
 }
@@ -246,6 +248,7 @@ div .swiper-slide {
 }
 
 .section-dark {
+    padding-bottom: 0;
     background-color: var(--section-color);
     background-image: url(../images/mobile/top-section-decor-320.png);
     background-position: center top;
@@ -294,7 +297,7 @@ div .swiper-slide {
 }
 
 .section__form {
-    padding: 59px 12px;
+    padding: 59px 12px 70px;
     width: 100%;
     position: relative;
     display: flex;
@@ -322,3 +325,113 @@ div .swiper-slide {
     line-height: 18.75px;
     border-bottom: 1px solid var(--border-dashed);
 }
+
+.section-bright {
+    padding: 70px 12px;
+    background-color: var(--accent-color);
+    background-image: url(../images/mobile/bottom-section-decor-320.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-bright_imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 70px 0 0;
+}
+
+.section-bright__logos {
+    display: flex;
+    gap: 16.4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-bright-img,
+.section-bright__logos_item-img {
+    display: block;
+}
+
+.item-logo {
+    block-size: 43.85px;
+    inline-size: 44px;
+}
+
+.item-x {
+    block-size: 10.55px;
+    inline-size: 49.33px;
+}
+
+.item-logo-main {
+    block-size: 44px;
+    inline-size: 175.41px;
+}
+
+.section-bright_content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-bright-block {
+    padding: 0;
+}
+
+.section-bright__advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-bright__advantage-item-paint,
+.section-bright__advantage-item-stars,
+.section-bright__advantage-item-stack {
+    position: relative;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.section-bright__advantage-item-paint::before {
+    position: absolute;
+    content: url(../images/mobile/paints.png);
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.section-bright__advantage-item-stars::before {
+    position: absolute;
+    content: url(../images/mobile/stars.png);
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.section-bright__advantage-item-stack::before {
+    position: absolute;
+    content: url(../images/mobile/stack.png);
+    inset-inline-start: 0;
+    inset-block-start: 0;
+}
+
+.section-bright__advantage-text {
+    padding: 0 0 0 42px;
+    line-height: 18.75px
+}
+
+.section-bright__button {
+    margin-top: 22px;
+    background-color: var(--bright-bg-btn-color);
+    color: var(--accent-color);
+    padding: 20.5px 50px;
+    inline-size: 184px;
+    line-height: 18.75px;
+}
+
+
+
